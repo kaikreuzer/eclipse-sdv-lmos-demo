@@ -50,10 +50,12 @@ curl -Ls https://sh.jbang.dev | bash -s - trust add https://github.com/eclipse-l
 curl -Ls https://sh.jbang.dev | bash -s - app install --fresh --force https://github.com/eclipse-lmos/arc/blob/main/arc-runner/arc.java
 ```
 
-Get an OpenAI API key at https://platform.openai.com/settings/organization/api-keys and export it:
+Get an OpenAI API key at https://platform.openai.com/settings/organization/api-keys and export it next to the settings of the model and provider:
 
 ```bash
 export ARC_AI_KEY=sk-...
+export ARC_MODEL=gpt-4o
+export ARC_CLIENT=openai
 ```
 
 Now create a LMOS Arc agent for fleet management and use the prepared definitions:
